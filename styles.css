@@ -1,0 +1,86 @@
+/* Body styles */
+body {
+    padding-top: 71px; /* Adjust for fixed navbar */
+    font-family: 'Arial', sans-serif; /* Use a readable font */
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text color */
+}
+p{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+li{
+    font-size: 20px;
+}
+/* Navbar styles */
+.navbar {
+    padding: 10px 0; /* Adjust padding for better appearance */
+    box-shadow: 0 2px 4px #000000; /* Add subtle shadow */
+    background-color: #ff5f09; /* Orange background */
+}
+
+.navbar-brand {
+    font-size: 2.5rem; /* Larger font size for brand */
+    color: #000000; /* Black text color */
+}
+
+.navbar-brand:hover {
+    color: #ff9800; /* Orange hover color */
+}
+
+.navbar-nav {
+    text-align: center; /* Center align navbar items */
+}
+
+.navbar-nav .nav-link {
+    color: #000000; /* Black text color */
+    font-size: 1.1rem; /* Font size */
+    text-transform: uppercase; /* Uppercase text */
+    margin: 0 1px; /* Add spacing between links */
+    }
+    .navbar-nav .nav-item .nav-link {
+        margin: 0 5px; /* Adjust the margin as needed */
+    }
+    
+
+.navbar-nav .nav-link:hover {
+    color: #ff9800; /* Orange hover color */
+}
+
+/* Content section styles */
+.content {
+    padding: 20px;
+    display: none; /* Hide content initially */
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+    margin-top: 20px; /* Space between sections */
+}
+
+.content h2 {
+    font-size: 2rem; /* Large heading size */
+    margin-bottom: 10px; /* Bottom margin */
+    color: #ffffff; /* White heading color */
+}
+
+.content p {
+    line-height: 1.6; /* Line height for readability */
+}
+
+.content ol {
+    margin-top: 10px; /* Top margin for ordered lists */
+}
+
+/* Icon styles */
+.nav-link i {
+    margin-right: 5px; /* Adjust icon margin */
+    color: #000000; /* White icon color */
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+.upload-btn:active {
+    transform: translateY(2px);
+    box-shadow: none; /* Optional: Remove box-shadow */
+}
