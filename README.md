@@ -3,7 +3,7 @@
 ## Overview
 This project is an image recognition web application that leverages several Amazon Web Services (AWS) such as AWS Lambda, AWS Rekognition, AWS S3, AWS IAM, AWS CloudWatch Logs, AWS Amplify, and AWS SES. The website allows users to upload images, which are then analyzed to identify objects, scenes, and other image attributes. The results, including labels and confidence scores, are sent to registered email addresses.
 
-[Visit the Website](https://your-website-url.com)
+[Visit the Website](https://staging.d2z4hfzfv13lit.amplifyapp.com/#)
 
 ## Technologies Used
 - **Frontend:** HTML, CSS, JavaScript
