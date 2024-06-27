@@ -8,13 +8,32 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
   <style>
-    /* Center content vertically */
-    .content-container {
+     /* Center content vertically */
+     .content-container {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 50vh; /* Adjust as needed */
+      min-height: 50vh; /* Adjust as needed */
+      padding-bottom: 40px; /* Ensure space for footer */
+    }
+
+    /* Style for footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 5px 0; /* Adjust padding as needed */
+      text-align: center;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      height: 40px; /* Adjust height as needed */
+    }
+
+    /* Adjust padding/margin for main content to avoid overlapping */
+    .container {
+      margin-bottom: 40px; /* Ensure space for footer */
     }
   </style>
 </head>
@@ -45,7 +64,11 @@
 </nav>
 
 <div class="container mt-5">
-  <!-- Image link section -->
+ 
+
+  <div class="content-container">
+    <div class="content" id="homeContent">
+       <!-- Image link section -->
   <div class="text-center mb-4">
     <a href="#" onclick="showContent('homeContent')">
       <img src="/image.png" alt="Image Link" style="max-width: 100%; height: auto;">
@@ -53,9 +76,6 @@
   </div>
   <hr style="border-color: #ffffff;">
   <br><br>
-
-  <div class="content-container">
-    <div class="content" id="homeContent">
       <p>This website allows you to upload images and receive object recognition results delivered to registered emails. It's a platform where users can securely upload their images, and upon submission, the system processes these images using AWS Rekognition services. The results are then sent to the user via email for their records and convenience.</p>
       <hr style="border-color: #ffffff;">
       <h2>How it Works:</h2>
@@ -66,14 +86,15 @@
       </ol>
     </div>
 
-    <div class="content" id="uploadContent" style="display: none; border: 2px solid #ffffff;">
+    <div class="content mt-5" id="uploadContent" style="display: none; border: 2px solid #ffffff;">
       <div class="content-container text-center" style="height: 40vh;">
         <form id="uploadForm">
           <div class="form-group mt-5">
             <label for="fileInput"><i class="fas fa-file-upload"></i> Choose a file to upload:</label><br><br>
-            <input type="file" class="form-control-file d-block mx-auto" id="fileInput" style="width: 75%;" onchange="previewFile()" />
+            <input type="file" class="form-control-file d-block mx-auto" id="fileInput" style="width: 100%;" onchange="previewFile()" />
           </div>
-          <button type="button" class="btn btn-primary mt-3 upload-btn" onclick="uploadFile()"><i class="fas fa-upload"></i> Upload</button>
+          <button type="button" class="btn btn-custom-orange mt-3 upload-btn" onclick="uploadFile()"><i class="fas fa-upload"></i> Upload</button>
+          <!-- Added btn-custom-orange class to customize button color -->
         </form>
       </div>
       <div class="text-center mt-3 preview-container">
@@ -85,7 +106,7 @@
       
       
 
-    <div class="content" id="contactContent" style="display: none;">
+    <div class="content mt-5" id="contactContent" style="display: none;">
       <div class="content-container">
         <h2><i class="fas fa-envelope"></i> Contact Us</h2>
         <p>For any inquiries or support, please contact us at <a href="kirtisalini@gmail.com">kirtisalini@gmail.com</a>.</p>
@@ -93,7 +114,11 @@
     </div>
   </div>
 </div>
-
+<footer>
+  <div class="container">
+    <h4>&copy; 2024 Rekognition Realm. All rights reserved.</h4>
+  </div>
+</footer>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

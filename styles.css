@@ -6,7 +6,7 @@ body {
     color: #ffffff; /* White text color */
 }
 p{
-    font-size: 30px;
+    font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
 }
 li{
@@ -93,4 +93,15 @@ li{
     max-height: 150px; /* Adjust the maximum height */
     display: none; /* Hide the image initially */
     margin: auto; /* Center the image horizontally */
+  }
+
+  .btn-custom-orange {
+    background-color: #ff5f09;
+    border-color: #ff5f09;
+    color: #000000; /* Text color */
+  }
+
+  .btn-custom-orange:hover {
+    background-color: #e65000; /* Darker shade when hovered */
+    border-color: #e65000;
   }
