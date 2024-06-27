@@ -67,16 +67,21 @@
     </div>
 
     <div class="content" id="uploadContent" style="display: none; border: 2px solid #ffffff;">
-        <div class="content-container text-center" style="height: 40vh;"> <!-- Adjusted height -->
-          <form id="uploadForm">
-            <div class="form-group mt-5">
-              <label for="fileInput"><i class="fas fa-file-upload"></i> Choose a file to upload:</label><br><br>
-              <input type="file" class="form-control-file d-block mx-auto" id="fileInput" style="width: 75%;" />
-            </div>
-            <button type="button" class="btn btn-primary mt-3 upload-btn" onclick="uploadFile()"><i class="fas fa-upload"></i> Upload</button>
-          </form>
-        </div>
+      <div class="content-container text-center" style="height: 40vh;">
+        <form id="uploadForm">
+          <div class="form-group mt-5">
+            <label for="fileInput"><i class="fas fa-file-upload"></i> Choose a file to upload:</label><br><br>
+            <input type="file" class="form-control-file d-block mx-auto" id="fileInput" style="width: 75%;" onchange="previewFile()" />
+          </div>
+          <button type="button" class="btn btn-primary mt-3 upload-btn" onclick="uploadFile()"><i class="fas fa-upload"></i> Upload</button>
+        </form>
       </div>
+      <div class="text-center mt-3 preview-container">
+        <h5>Preview:</h5>
+        <img id="preview" src="#" alt="Image Preview">
+      </div>
+    </div>
+
       
       
 
@@ -94,6 +99,22 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <script>
+  function previewFile() {
+  var preview = document.getElementById('preview');
+  var file = document.querySelector('input[type=file]').files[0];
+  var reader = new FileReader();
+
+  reader.onloadend = function () {
+    preview.src = reader.result;
+    preview.style.display = 'block';
+  }
+
+  if (file) {
+    reader.readAsDataURL(file);
+  } else {
+    preview.src = '';
+  }
+}
 document.addEventListener('DOMContentLoaded', function() {
   // Show homeContent by default
   showContent('homeContent');

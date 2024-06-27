@@ -84,3 +84,13 @@ li{
     transform: translateY(2px);
     box-shadow: none; /* Optional: Remove box-shadow */
 }
+.preview-container {
+    text-align: center; /* Center the image horizontally */
+  }
+
+  #preview {
+    max-width: 150px; /* Adjust the maximum width */
+    max-height: 150px; /* Adjust the maximum height */
+    display: none; /* Hide the image initially */
+    margin: auto; /* Center the image horizontally */
+  }
