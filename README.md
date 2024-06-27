@@ -40,8 +40,8 @@ This project is an image recognition web application that leverages several Amaz
 ### Steps
 1. **Clone the Repository:**
    ```sh
-   git clone https://github.com/yourusername/imagerecognition-website.git
-   cd imagerecognition-website
+   git clone https://github.com/kirti-salini/Rekognition-Realm
+   cd Rekognition-Realm
 
 
 ## Frontend Setup
