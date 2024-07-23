@@ -6,10 +6,13 @@ This project is an image recognition web application(Responsive) that leverages 
 [Visit the Website](https://staging.dsd4wa1u6rju9.amplifyapp.com/)
 
 ![1690399129943](https://github.com/kirti-salini/Rekognition-Realm/assets/117555508/a1cae3a4-f5e7-4ade-b379-a5b2dc737229)
-![image](https://github.com/kirti-salini/Rekognition-Realm/assets/117555508/4397d888-d26f-44da-bfb2-26dfedf877b2)
-![image](https://github.com/kirti-salini/Rekognition-Realm/assets/117555508/4af642cc-1d50-4b1e-8006-fe1045ed00a3)
-![image](https://github.com/kirti-salini/Rekognition-Realm/assets/117555508/e4f6e398-7507-403f-9b9c-b291c05480ec)
+![image](https://github.com/user-attachments/assets/1342e1f2-8d82-4dd0-867d-a29d772574ac)
+![image](https://github.com/user-attachments/assets/f8e277fb-dc57-452d-86d5-b35e0ea6939d)
+![image](https://github.com/user-attachments/assets/5d61daa2-0ff6-4c41-a5f1-d47becc04a47)
 ![image](https://github.com/kirti-salini/Rekognition-Realm/assets/117555508/a7224cf3-e017-429e-9faa-19e1aa81fef6)
+
+
+
 
 
 
