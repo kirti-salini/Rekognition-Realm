@@ -9,7 +9,7 @@ This project is an image recognition web application(Responsive) that leverages 
 ![image](https://github.com/user-attachments/assets/1342e1f2-8d82-4dd0-867d-a29d772574ac)
 ![image](https://github.com/user-attachments/assets/f8e277fb-dc57-452d-86d5-b35e0ea6939d)
 ![image](https://github.com/user-attachments/assets/5d61daa2-0ff6-4c41-a5f1-d47becc04a47)
-![image](https://github.com/kirti-salini/Rekognition-Realm/assets/117555508/a7224cf3-e017-429e-9faa-19e1aa81fef6)
+![image](https://github.com/kirti-salini/Rekognition-Realm/assets/117555508/e4f6e398-7507-403f-9b9c-b291c05480ec)
 
 
 
