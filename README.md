@@ -3,15 +3,14 @@
 ## Overview
 This project is an image recognition web application(Responsive) that leverages several Amazon Web Services (AWS) such as AWS Lambda, AWS Rekognition, AWS S3, AWS IAM, AWS CloudWatch Logs, AWS Amplify, and AWS SES. The website allows users to upload images, which are then analyzed to identify objects, scenes, and other image attributes. The results, including labels and confidence scores, are sent to registered email addresses.
 
-[Visit the Website](https://staging.dsd4wa1u6rju9.amplifyapp.com/)
+[Visit the Website](https://staging.dc8y4zupgeew1.amplifyapp.com/#)
 
 ![1690399129943](https://github.com/kirti-salini/Rekognition-Realm/assets/117555508/a1cae3a4-f5e7-4ade-b379-a5b2dc737229)
 ![image](https://github.com/user-attachments/assets/1342e1f2-8d82-4dd0-867d-a29d772574ac)
 ![image](https://github.com/user-attachments/assets/f8e277fb-dc57-452d-86d5-b35e0ea6939d)
 ![image](https://github.com/user-attachments/assets/5d61daa2-0ff6-4c41-a5f1-d47becc04a47)
 ![image](https://github.com/kirti-salini/Rekognition-Realm/assets/117555508/e4f6e398-7507-403f-9b9c-b291c05480ec)
-
-
+![image](https://github.com/user-attachments/assets/3a29dee5-c143-4cdd-b18d-be0f438e1a8b)
 
 
 
