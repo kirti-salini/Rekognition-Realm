@@ -1,32 +1,83 @@
 /* Body styles */
 body {
     padding-top: 71px; /* Adjust for fixed navbar */
-    font-family: 'Arial', sans-serif; /* Use a readable font */
-    background-color: #000000; /* Black background */
+    font-family:'Courier New', Courier, monospace, Helvetica, sans-serif;
+    background-color: #0d0e23; /* Black background */
     color: #ffffff; /* White text color */
 }
 p{
     font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace, Helvetica, sans-serif;
 }
 li{
     font-size: 20px;
 }
+  
+.responsive-image {
+width:100%; /* Full width of the container */
+display: flex;
+justify-content: center; /* Center the image horizontally */
+align-items: center; /* Center the image vertically if needed */
+overflow: hidden; /* Hide overflow if the image is too large */
+  height: 2%;
+  display: flex;
+  object-fit: cover; /* Ensures the image covers the entire container without distortion */
+  display: block; /* Removes any extra spacing around the image */
+  }
 /* Navbar styles */
+
 .navbar {
-    padding: 10px 0; /* Adjust padding for better appearance */
-    box-shadow: 0 2px 4px #000000; /* Add subtle shadow */
-    background-color: #ff5f09; /* Orange background */
-}
+    background-color: rgba(0, 0, 0, 0.9); /* Black background with 50% opacity */
+    position: fixed;
+    width: 100%;
+    height: 15%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    z-index: 1000; /* Ensures the navbar stays on top */
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar li {
+    margin: 0 1rem;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #ddd;
+  }
 
 .navbar-brand {
     font-size: 2.5rem; /* Larger font size for brand */
     color: #000000; /* Black text color */
+    transition: transform 0.3s ease-in-out;
 }
 
 .navbar-brand:hover {
-    color: #ff9800; /* Orange hover color */
+    transform: translateY(-5px); /* Move up slightly */
 }
+.nav-item {
+    width: 350px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .nav-item:hover {
+    transform: translateY(-5px); /* Move up slightly */
+  }
 
 .navbar-nav {
     text-align: center; /* Center align navbar items */
@@ -44,12 +95,11 @@ li{
     
 
 .navbar-nav .nav-link:hover {
-    color: #ff9800; /* Orange hover color */
+    color: black; /* Orange hover color */
 }
 
 /* Content section styles */
 .content {
-    padding: 20px;
     display: none; /* Hide content initially */
     background-color: #000000; /* Black background */
     color: #ffffff; /* White text color */
@@ -62,14 +112,17 @@ li{
     font-size: 2rem; /* Large heading size */
     margin-bottom: 10px; /* Bottom margin */
     color: #ffffff; /* White heading color */
+    padding: 20px;
 }
 
 .content p {
     line-height: 1.6; /* Line height for readability */
+    padding: 20px;
 }
 
 .content ol {
     margin-top: 10px; /* Top margin for ordered lists */
+
 }
 
 /* Icon styles */
@@ -95,13 +148,14 @@ li{
     margin: auto; /* Center the image horizontally */
   }
 
-  .btn-custom-orange {
-    background-color: #ff5f09;
-    border-color: #ff5f09;
-    color: #000000; /* Text color */
+  .btn-custom-p {
+    background-color: #682b7e;
+    border-color: #682b7e;
+    color: white; /* Text color */
   }
 
-  .btn-custom-orange:hover {
-    background-color: #e65000; /* Darker shade when hovered */
-    border-color: #e65000;
+  .btn-custom-p:hover {
+    background-color: white;
+    border-color: #682b7e;
+    color: #682b7e; /* Text color */
   }

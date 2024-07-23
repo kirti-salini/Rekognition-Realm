@@ -25,7 +25,6 @@
       padding: 5px 0; /* Adjust padding as needed */
       text-align: center;
       width: 100%;
-      position: fixed;
       bottom: 0;
       left: 0;
       height: 40px; /* Adjust height as needed */
@@ -39,10 +38,10 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #ff5f09;">
-  <div class="container">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" >
+
     <a class="navbar-brand" href="#">
-      <img src="/image2.png" alt="Image Link" style="max-width: 50%; height: auto;" onclick="showContent('homeContent')">
+      <img src="/image2.png" alt="Image Link" style="max-width: 160px; height: 80px;" onclick="showContent('homeContent')">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -50,56 +49,52 @@
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#" onclick="showContent('homeContent')"><i class="fas fa-home"></i> <img src="/home.png" alt="Image Link" style="max-width:50%; height: auto;"></a>
+          <a class="nav-link" href="#" onclick="showContent('homeContent')"><img src="/home.png" alt="Image Link" style="max-width:50%; height: auto;"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" onclick="showContent('uploadContent')"><i class="fas fa-file-upload"></i><img src="/upload.png" alt="Image Link" style="max-width: 50%; height: auto;"></a>
+          <a class="nav-link" href="#" onclick="showContent('uploadContent')"><img src="/upload.png" alt="Image Link" style="max-width: 50%; height: auto;"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" onclick="showContent('contactContent')"><i class="fas fa-envelope"></i><img src="/contact.png" alt="Image Link" style="max-width: 50%; height: auto;"></a>
+          <a class="nav-link" href="#" onclick="showContent('contactContent')"><img src="/contact.png" alt="Image Link" style="max-width: 50%; height: auto;"></a>
         </li>
       </ul>
     </div>
-  </div>
+ 
 </nav>
 
-<div class="container mt-5">
- 
 
   <div class="content-container">
-    <div class="content" id="homeContent">
-       <!-- Image link section -->
-  <div class="text-center mb-4">
-    <a href="#" onclick="showContent('homeContent')">
-      <img src="/image.png" alt="Image Link" style="max-width: 100%; height: auto;">
-    </a>
-  </div>
-  <hr style="border-color: #ffffff;">
+    <div class="content" id="homeContent"style="background-color: #0d0e23;">
+       <!-- Image link section--> 
+
+      <img src="/background.jpg" alt="Image Link" class="responsive-image" >
   <br><br>
+      <div style="background-color: #0d0e23;">
       <p>This website allows you to upload images and receive object recognition results delivered to registered emails. It's a platform where users can securely upload their images, and upon submission, the system processes these images using AWS Rekognition services. The results are then sent to the user via email for their records and convenience.</p>
       <hr style="border-color: #ffffff;">
       <h2>How it Works:</h2>
       <ol>
-        <li>Choose a file to upload using the form below.</li>
+        <li>Choose a file to upload in the Upload Section.</li>
         <li>Click the "Upload" button to send your file to the server.</li>
         <li>Receive an email with object recognition results once processing is complete.</li>
       </ol>
     </div>
+    </div>
 
-    <div class="content mt-5" id="uploadContent" style="display: none; border: 2px solid #ffffff;">
-      <div class="content-container text-center" style="height: 40vh;">
+    <div class="content mt-5" id="uploadContent" style="display: none; border: 2px solid #ffffff; width: 80vh;">
+      <div class="content-container text-center" style="height: 64vh;">
         <form id="uploadForm">
           <div class="form-group mt-5">
             <label for="fileInput"><i class="fas fa-file-upload"></i> Choose a file to upload:</label><br><br>
             <input type="file" class="form-control-file d-block mx-auto" id="fileInput" style="width: 100%;" onchange="previewFile()" />
           </div>
-          <button type="button" class="btn btn-custom-orange mt-3 upload-btn" onclick="uploadFile()"><i class="fas fa-upload"></i> Upload</button>
-          <!-- Added btn-custom-orange class to customize button color -->
+          <button type="button" class="btn btn-custom-p mt-3 upload-btn" onclick="uploadFile()"><i class="fas fa-upload"></i> Upload</button>
         </form>
       </div>
-      <div class="text-center mt-3 preview-container">
+      <div class="text-center mt-0.5 preview-container">
         <h5>Preview:</h5>
         <img id="preview" src="#" alt="Image Preview">
+        <br>
       </div>
     </div>
 
@@ -108,12 +103,15 @@
 
     <div class="content mt-5" id="contactContent" style="display: none;">
       <div class="content-container">
+        <p style="font-size: 3.5em;">Thank You for Visiting</p>
+        <p style="font-size: 3em;">Have a Great Day Ahead!!</p>
         <h2><i class="fas fa-envelope"></i> Contact Us</h2>
-        <p>For any inquiries or support, please contact us at <a href="kirtisalini@gmail.com">kirtisalini@gmail.com</a>.</p>
+        <p style="font-size: 1.2em;">For any inquiries or support, please contact us at <a href="mailto:kirtisalini@gmail.com">kirtisalini@gmail.com</a>.</p>
       </div>
     </div>
+    
   </div>
-</div>
+
 <footer>
   <div class="container">
     <h4>&copy; 2024 Rekognition Realm. All rights reserved.</h4>
